@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,11 +17,11 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage('assets/avatar.jpg'), // Thêm ảnh đại diện
+                backgroundImage: AssetImage('assets/avatar.jpg'), 
               ),
-              Text(
+              const Text(
                 'Ngô Qúi Bảo Phúc',
                 style: TextStyle(
                   fontFamily: 'Pacifico',
@@ -46,9 +48,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.phone,
                     color: Colors.teal,
                   ),
@@ -63,9 +65,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.email,
                     color: Colors.teal,
                   ),
@@ -80,9 +82,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
-                  leading: Icon(
+                  leading: const Icon(
                     Icons.work,
                     color: Colors.teal,
                   ),
